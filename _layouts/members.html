@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="members">
+{% for member in site.data.members %}
+    <div id="member" style="margin-bottom: 10px; overflow: hidden">
+        <div class="member-image" style="float: left; width: 25%">
+            <img class="img-fluid" alt="ligma" src="{{ member.avatar }}" style="height: 225px; width: 90%; display: block; object-fit: cover" >
+
+        </div>
+        <div class="member-bio" style="float: left">
+            <div class="card-body">
+                <p class="post-title">{{ member.name }}</p>
+                <p class="post-content">{{ member.bio}}</p>
+                <small class="text-muted">{{ member.interests | join: " - " }}</small>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
