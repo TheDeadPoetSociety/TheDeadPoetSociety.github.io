@@ -4,4 +4,4 @@ WORKDIR /srv/jekyll
 
 RUN gem install jekyll-admin
 
-CMD ["jekyll", "serve", "--watch", "--force-poll"]
+CMD ["jekyll", "serve", "--watch", "--force-poll", "--trace"]
