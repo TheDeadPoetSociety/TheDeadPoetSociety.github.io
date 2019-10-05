@@ -31,6 +31,16 @@ github_username:  TheDeadPoetSociety
 
 logo_minimal:
 
+collections_dir: content
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name
+  writeups:
+    output: true
+    permalink: /writeups/:name
+
+
 # Build settings
 #theme: minima
 plugins:
