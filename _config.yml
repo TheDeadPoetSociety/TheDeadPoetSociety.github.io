@@ -31,7 +31,6 @@ github_username:  TheDeadPoetSociety
 
 logo_minimal:
 
-collections_dir: content
 collections:
   blog:
     output: true
@@ -45,6 +44,11 @@ collections:
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-admin
+
+jekyll_admin:
+  hidden_links:
+    - posts
 
 # Exclude from processing.
 # The following items will not be processed, by default.
