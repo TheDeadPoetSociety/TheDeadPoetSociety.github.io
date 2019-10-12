@@ -1,6 +1,7 @@
 ---
 - name: TheQueenIsDead
   github: https://github.com/TheQueenIsDead
+  twitter: "@qu33n_15_d34d"
   avatar: https://avatars0.githubusercontent.com/u/30706552?s=460&v=4
   interests:
     - Web
@@ -12,6 +13,7 @@
 
 - name: Tiklo
   github: https://github.com/YRoghi
+  twitter: "@Tiklo_"
   avatar: https://avatars1.githubusercontent.com/u/40310284?s=400&v=4
   interests:
     - Reverse Engineering

@@ -3,11 +3,9 @@ version: '3'
 services:
 
   jekyll:
+    build: .
     image: dps-blog:test
-    build:
-      context: .
-      dockerfile: Dockerfile
     volumes:
-      - './:/srv/jekyll'
+      - './:/srv/jekyll:rw'
     ports:
       - '4000:4000'
