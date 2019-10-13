@@ -27,7 +27,7 @@ There was a CTF running over the course of the two days, which was a fun complim
 We managed to scrape our way through a few of the tasks and get a quick 2-3 more challenges on the
 board in the last half an hour. This placed us second, which was incredibly exciting!
 It was nice to see experience from other CTF's paying dividends, a testament to getting better and
-furthering our knowlegde there. The tournament was a real community effort as well, each break
+furthering our knowledge there. The tournament was a real community effort as well, each break
 between talks people were relaxing and chatting, helping each other out. Once again it created a
 really welcoming environment that just reinforced the goals of the InfoSec community, meet great
 people, learn and help learn, hack the world.
