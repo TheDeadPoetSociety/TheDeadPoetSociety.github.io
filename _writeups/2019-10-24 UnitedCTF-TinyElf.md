@@ -41,7 +41,7 @@ Doing a hexdump of the file, it was very clear that the magic ELF bytes had been
 00000010 0002 0003 5e5e 16eb 2004 0100 0021 0000
 ```
 
-At this point I was a little worried. I wasn't entirely sure how to proceed as I wasn't entirely confident in my ability to convert opcode into readable assembly. After a few attempts at manually trying to add a header, I started looking for a less "brute force" approach. Thankfully, it was around this time that Radare2 came to the rescue. After a few warnings during the analysis of the binary, Radare2 was able to identify and decompile the binary. We were in!
+At this point I was a little worried. I wasn't entirely sure how to proceed as I wasn't entirely confident in my ability to convert hexcode into readable assembly. After a few attempts at manually trying to add a header, I started looking for a less "brute force" approach. Thankfully, it was around this time that Radare2 came to the rescue. After a few warnings during the analysis of the binary, Radare2 was able to identify and decompile the binary. We were in!
 
 Once inside, the distinct lack of main function (or any function for that matter) became apparent. I decided to do some digging, and found a very helpful [article](https://0x00sec.org/t/dissecting-and-exploiting-elf-files/7267) detailing how an ELF binary with a size of 128bytes could be created. In short: It had been directly compiled from x86 Assembly.
 
