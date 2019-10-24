@@ -72,7 +72,7 @@ Once the loop is completed, `dl` is XOR'ed with `byte[esi]`, the result is store
 
 This program is using XOR encryption, which we can use to our advantage. If we set a breakpoint at `0x0100204f`, we can check the value of the `dl` register. Once noted, we can step a single instruction, and set the `dl` register to 0, tricking the program into thinking the character was correct and proceeding.
 
-After doing this 31 times (this was somewhat tedious...), I wrote a short python script to XOR each byte with `0x1f` (since XOR encryption is symmetric) and print the flag. And what came out was... _G A R B A G E_. I'm not joking when I say that this was extremely unerving. I was sure I had accounted for everything!
+After doing this 31 times (this was somewhat tedious...), I wrote a short python script to XOR each byte with `0xdb` (since XOR encryption is symmetric) and print the flag. And what came out was... _G A R B A G E_. I'm not joking when I say that this was extremely unerving. I was sure I had accounted for everything!
 
 After a lot of digging, I found that I had made a crucial mistake. The line:
 > This loop uses program memory, as well as the value of the current character (that has been XOR'ed) to compute a value that is stored in the 8bit register `dl`.
